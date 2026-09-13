@@ -1,0 +1,14 @@
+# Dev-only harness: loads Phaser from a CDN and exposes helpers that drive the
+# game loop by hand. Never part of the shipped game — index.html is the entry.
+preview.html
+
+# Verification captures and the flat art sheets the bake writes for eyeballing.
+# Regenerate with tools/bake.js; not needed to run or deploy.
+screenshots/
+build/
+
+# The bound design system lives with the design tooling, not the game.
+_ds/
+
+.DS_Store
+Thumbs.db
