@@ -54,10 +54,12 @@ screen.
 
 ## Opening ident
 
-Every launch opens on the Entropic Labs logo (`src/media/entropic-ident.mp4`), played full-screen
+Every launch opens on the Entropic Labs logo and its sound (`src/media/entropic-ident.mp4`), played full-screen
 by `src/ident.js` while the game loads underneath. A tap, click, Enter, Space or Escape
-skips it; if the video can't load or autoplay, the game simply starts. Add
-`?noident` to the URL to skip it while developing.
+skips it; if the video can't load, the game simply starts. The logo has sound,
+and browsers won't start sound before the player interacts, so when the browser
+blocks it the screen first says "Tap to begin" (that tap also unlocks the game's
+own audio). Add `?noident` to the URL to skip it while developing.
 
 ## What's in the game
 
