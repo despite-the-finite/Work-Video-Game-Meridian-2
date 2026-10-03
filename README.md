@@ -52,6 +52,13 @@ landscape they tuck into the letterbox bands beside the canvas. They stay
 hidden on desktop, and on a touchscreen laptop until you actually touch the
 screen.
 
+## Opening ident
+
+Every launch opens on the Entropic Labs logo (`src/media/entropic-ident.mp4`), played full-screen
+by `src/ident.js` while the game loads underneath. A tap, click, Enter, Space or Escape
+skips it; if the video can't load or autoplay, the game simply starts. Add
+`?noident` to the URL to skip it while developing.
+
 ## What's in the game
 
 - **Title & intro** — a title card over a drafting sheet of the plant you
